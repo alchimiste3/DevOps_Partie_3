@@ -15,4 +15,4 @@ ubuntu mono .net
 
 # Pout build :  sudo docker build --no-cache -t cyrus8/dot2 .
 
-# Pout run : sudo docker run - cyrus8/dot2
+# Pout run : sudo docker run -it cyrus8/dot2
