@@ -12,3 +12,7 @@ ubuntu tomee avec J2E
 
 
 ubuntu mono .net
+
+# Pout build :  sudo docker build --no-cache -t cyrus8/dot2 .
+
+# Pout run : sudo docker run - cyrus8/dot2
