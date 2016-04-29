@@ -1,2 +1,0 @@
-127.0.0.1 - - [07/Apr/2016:14:26:30 +0200] "POST /tcf-backend/webservices/CartWS HTTP/1.1" 500 427
-127.0.0.1 - - [07/Apr/2016:14:28:26 +0200] "POST /tcf-backend/webservices/CustomerCareWS HTTP/1.1" 200 189

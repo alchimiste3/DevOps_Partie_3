@@ -1,18 +1,17 @@
-FROM tomee
+# Dockerfile du server tomee
+
+FROM tomee:8-jre-1.7.3-plus
 
 WORKDIR /app
 
-ADD install.sh /app/install.sh
+ADD tomcat-users.xml /usr/local/tomee/conf/tomcat-users.xml
 
-
-RUN ./install.sh
-
+# On ajoute le point war
 ADD tcf-backend.war /usr/local/tomee/webapps/tcf-backend.war
 
-ADD . /app
 
-ENV PORT 80
-EXPOSE 80
+EXPOSE 8000
+
 
 
 
