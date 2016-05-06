@@ -1,18 +1,12 @@
-# Using official python runtime base image
-FROM python:2.7-alpine
+FROM ubuntu:14.04
 
-# Set the application directory
 WORKDIR /app
 
-# Install our requirements.txt
-ADD requirements.txt /app/requirements.txt
-RUN pip install -r requirements.txt
+ADD requirement.sh /app/requirement.sh
+RUN exec /app/requirement.sh
 
-# Copy our code from the current folder to /app inside the container
-ADD . /app
+ADD server.exe /app/server.exe
 
-# Make port 80 available for links and/or publish
-EXPOSE 80
+EXPOSE 9090
 
-# Define our command to be run when launching the container
-CMD ["python", "app.py"]
+CMD ["mono", "server.exe"]

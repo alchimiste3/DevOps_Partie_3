@@ -9,7 +9,7 @@ services:
       - reseau
 
   dotnet-app:
-    image: cyrus8/dotnet-app
+    image: alchimiste3/dotnet-app
     ports:
       - "9090:9090"
     networks:
