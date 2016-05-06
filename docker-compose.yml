@@ -5,17 +5,14 @@ services:
     image: alchimiste3/j2e-app-use
     ports:
       - "8080:8080"
-    networks:
-      - reseau
+    network_mode: "host"
+    volumes:
+     - ./dataJ2eCompo:/app
 
   dotnet-app:
     image: alchimiste3/dotnet-app
     ports:
       - "9090:9090"
-    networks:
-      - reseau
+    network_mode: "host"
 
-
-networks:
-  reseau:
   
