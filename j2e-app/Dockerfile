@@ -10,6 +10,9 @@ FROM tomee:8-jre-1.7.4-plus
 
 WORKDIR /app
 
+ADD update.sh /usr/local/tomee/update.sh
+RUN exec /usr/local/tomee/update.sh
+
 # On ajoute les droit administrateur sur le serveur apache
 ADD tomcat-users.xml /usr/local/tomee/conf/tomcat-users.xml
 

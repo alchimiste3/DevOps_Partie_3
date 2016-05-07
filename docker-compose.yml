@@ -2,7 +2,7 @@ version: "2"
 
 services:
   j2e-app:
-    image: alchimiste3/j2e-app-use
+    image: alchimiste3/j2e-app-para
     ports:
       - "8080:8080"
     network_mode: "host"
