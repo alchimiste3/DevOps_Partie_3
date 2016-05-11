@@ -6,8 +6,11 @@ services:
     ports:
       - "8080:8080"
     network_mode: "host"
-    volumes:
-     - ./dataJ2eCompo:/app
+    volumes_from:
+      - container:dataJ2E
+
+    # volumes:
+    #  - ./dataJ2eCompo:/app
 
   dotnet-app:
     image: alchimiste3/dotnet-app

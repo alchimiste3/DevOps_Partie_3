@@ -5,7 +5,7 @@
 
 ## Creer un volume pour save le J2E :
 
-sudo docker create -v /app --name dataJ2E alchimiste3/j2e-app-use /bin/true
+sudo docker create -v /app --name dataJ2E alchimiste3/j2e-app-para /bin/true
 
 ## Pour utiliser J2E : j2e-app-para 
 
