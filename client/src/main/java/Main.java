@@ -32,8 +32,8 @@ public class Main extends Shell<TCFPublicAPI> {
 
 	public static void main(String[] args) {
 		//String host = "localhost";
-
-		String host = "erebe-vm7.i3s.unice.fr";
+		//String host = "erebe-vm7.i3s.unice.fr";
+		String host = "10.212.102.173";
 		String port = "8080";
 		System.out.println("\n\nStarting Cookie on Demand by The Cookie Factory");
 		System.out.println("  - Remote server: " + host);
